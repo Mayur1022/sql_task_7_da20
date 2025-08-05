@@ -1,7 +1,7 @@
 
 select * from student;
 
-create function grade_check(marks int)
+create or replace  function grade_check(marks int)
 returns varchar as $$
 begin
 if marks >=95 then return 'A+';
